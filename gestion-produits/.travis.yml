@@ -1,0 +1,12 @@
+# .travis.yml
+language: java
+jdk:
+  - openjdk21
+
+# Cache pour accélérer les builds
+cache:
+  directories:
+    - $HOME/.m2
+
+# Commande de build
+script: mvn test
